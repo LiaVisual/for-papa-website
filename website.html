@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .html, body{
+            background-image: url(images/Baby\ Blue.jpg);
+            background-size: 1500px;
+        }
+        .h1{
+            color: rgba(31, 31, 31, 0.788);
+            margin-top: 40px;
+            text-align: center;
+            font-size: 32px;
+        }
+        .input-group{
+            margin: 40px 0px;
+        }
+        .input-group input{
+            height: 45px;
+        }
+        .btn-add{
+            background-color: chartreuse;
+            color: aliceblue;
+            padding: 0px 63px;
+        }
+        .btn-remove{
+            background-color: crimson;
+            color: aliceblue;
+            padding: 0px 63px;
+        }
+        ul{
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        li{
+            position: relative;
+            display: block;
+            padding: 10px 20px;
+
+            margin-bottom: 10px;
+            background-color: aliceblue;
+            border: 1px solid rgb(255, 255, 255);
+            border-top-left-radius: .25rem ;
+            border-top-right-radius: .25rem ;
+            border-bottom-left-radius: .25rem ;
+            border-top-right-radius: .25rem ;
+        }
+        .back-button{
+            display: flex;
+            left: auto;
+            padding: 10px 12px;
+            top: auto;
+        }
+        .body{
+           background-image: url(images/Baby\ Blue.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <h1>Buat Pesan!</h1>
+
+                <hr> 
+
+                <div class="input-group">
+                    <input type="text" class="form-control" id="candidate">
+               
+                     <div class="input-group-append">
+                    <button onclick= "addItem()" class="btn btn-add" type="button">Add Item</button>
+                    <button onclick= "removeItem()" class="btn btn-remove" type="button">Remove Item</button>
+                    </div>
+                </div>
+
+                <ul id="dynamic-list">
+                    <li>I</li>
+                    <li>Love</li>
+                    <li>You</li>
+                    <li>Papa</li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="back-button">
+        <a href="Test.html">
+            <button style="font-size:60px;"><i class="fa-solid fa-arrow-left"></i></button>
+           </a>
+        </div> 
+</body>
+</html>
